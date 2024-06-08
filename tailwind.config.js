@@ -14,7 +14,7 @@ export default {
         "secondary-400": "#FFCD5B",
         "secondary-500": "#FFC132",
       },
-      backgroundImage: (theme) => ({
+      backgroundImage: () => ({
         "gradient-yellowred": "linear-gradient(90deg,#FF616A 0%, #FFC837 100%",
         "mobile-home": "url('./src/assets/HomePageGraphic.png')",
       }),
@@ -32,7 +32,7 @@ export default {
     screens: {
       xs: "480px",
       sm: "768px",
-      md: "1060",
+      md: "1060px",
     },
   },
   plugins: [],
