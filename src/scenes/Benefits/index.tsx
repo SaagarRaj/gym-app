@@ -10,6 +10,7 @@ import { BenefitType } from "@/shared/types";
 import Benefit from "./Benefits";
 import ActionButton from "@/shared/ActionButton";
 import BenefitsPageGraphics from "@/assets/BenefitsPageGraphic.png";
+
 const benefits: Array<BenefitType> = [
   {
     icon: <HomeModernIcon className="h-6 w-6" />,
