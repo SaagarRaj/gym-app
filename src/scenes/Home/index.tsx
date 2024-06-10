@@ -1,4 +1,4 @@
-import { SelectedPage } from "@/shared/types";
+import { SelectedPage, PageContent } from "@/shared/types";
 import HomePageText from "@/assets/HomePageText.png";
 import HomePageGraphics from "@/assets/HomePageGraphic.png";
 import SponsorRedBull from "@/assets/SponsorRedBull.png";
@@ -43,11 +43,7 @@ const Home = ({ setSelectedPage }: Props) => {
               </div>
             </div>
 
-            <p className="mt-8 text-sm">
-              Unrivaled Gym. Unparalleled Training Fitness Classes. World Class
-              Studios to get the Body Shapes That you Dream of.. Get Your Dream
-              Body Now.
-            </p>
+            <p className="mt-8 text-sm">{PageContent.HomePageParagraph}</p>
           </motion.div>
           {/* Actions */}
           <motion.div
