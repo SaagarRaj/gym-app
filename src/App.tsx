@@ -4,6 +4,7 @@ import Benefits from "@/scenes/Benefits";
 import { useEffect, useState } from "react";
 import { SelectedPage } from "@/shared/types";
 import OurClasses from "./scenes/OurClasses";
+import ContactUs from "./scenes/ContactUs";
 
 function App() {
   const [selectedPage, setSelectedPage] = useState<SelectedPage>(
@@ -25,7 +26,7 @@ function App() {
   }, []);
 
   return (
-    <div className="app bg-gray-20 ">
+    <div className="app bg-gray-20">
       <Navbar
         setSelectedPage={setSelectedPage}
         selectedPage={selectedPage}
@@ -36,6 +37,8 @@ function App() {
       <Benefits setSelectedPage={setSelectedPage} />
 
       <OurClasses setSelectedPage={setSelectedPage} />
+
+      <ContactUs setSelectedPage={setSelectedPage} />
     </div>
   );
 }
